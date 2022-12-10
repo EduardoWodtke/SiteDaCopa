@@ -25,3 +25,8 @@ img{
 body{
     background-image: url(./imagens-Index/campo.jpg);
 }
+
+.tamanho{
+    width: 100px;
+    height: 100px !important;
+}
