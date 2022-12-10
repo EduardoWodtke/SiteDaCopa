@@ -13,3 +13,15 @@ img{
 .cor1{
     background-color: rgb(58, 58, 58);
 }
+
+.cor2{
+    color: rgb(214, 214, 31) !important;
+}
+
+.aling{
+    text-align: center;
+}
+
+body{
+    background-image: url(./imagens-Index/campo.jpg);
+}

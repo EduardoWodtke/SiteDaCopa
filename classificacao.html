@@ -1,72 +1,182 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WarCup • Classificação</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./imagens-Index/img.ico" type="image/x-icon">   
 </head>
 
 <body class="bg-dark">
-    <div class="container bg-dark text-light">
-        <ul class="nav">
-            <li class="nav-item">
-                <a class="nav-link text-warning" href="classificacao.html">Classificação</a>
-            </li>
-            <li class="nav-item text-warning">
-                <a class="nav-link" href="index.html">Noticias</a>
-            </li>
-            <li class="nav-item text-warning">
-                <a class="nav-link" href="jogos.html">Jogos</a>
-            </li>
-        </ul>
-        <h2>Tabela dos ultimos resultados</h2>
-        <p>Aqui veja agora tudo sobre as Classificações!!</p>
-        <table class="table text-light table-bordered ">
+
+    <nav class="navbar navbar-expand-lg navbar-light cor1">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./imagens-Index/image.png"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="classificacao.html">Classificação</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="index.html">Noticias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="jogos.html">jogos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarScrollingDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Configuração
+                        </a>
+                        <ul class="dropdown-menu bg-dark" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item text-light" href="#">Perfil</a></li>
+                            <li><a class="dropdown-item text-light" href="#">Favoritos</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-light" href="#">Problemas?</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    </br></br>
+
+    <div class="conteiner">
+        <h1 class="text-light bg-danger">Grupo A</h1>
+        <table class="table table-dark table-striped">
             <thead>
                 <tr>
-                    <th>Posição</th>
-                    <th>País</th>
-                    <th>Pontos</th>
+                    <th scope="col">Colocação</th>
+                    <th scope="col">País</th>
+                    <th scope="col">Pontos</th>
+                    <th scope="col">Gols</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>1°</td>
-                    <td>Metal gear</td>
-                    <td>190</td>
+                    <th scope="row">1</th>
+                    <td>Espanha</td>
+                    <td>6</td>
+                    <td>8</td>
                 </tr>
                 <tr>
-                    <td>2°</td>
-                    <td>Devil may cry</td>
-                    <td>80</td>
+                    <th scope="row">2</th>
+                    <td>Brasil</td>
+                    <td>6</td>
+                    <td>4</td>
                 </tr>
                 <tr>
-                    <td>3°</td>
-                    <td>Celeste</td>
-                    <td>70</td>
+                    <th scope="row">3</th>
+                    <td>Portugal</td>
+                    <td>4</td>
+                    <td>4</td>
                 </tr>
                 <tr>
-                    <td>4°</td>
-                    <td>Hollow Knight</td>
-                    <td>43</td>
+                    <th scope="row">4</th>
+                    <td>Argentina</td>
+                    <td>3</td>
+                    <td>2</td>
+                </tr>
+            </tbody>
+        </table>
+        <Br></Br>
+        <Br></Br>
+        <h1 class="text-light bg-danger">Grupo B</h1>
+        <table class="table table-dark table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Colocação</th>
+                    <th scope="col">País</th>
+                    <th scope="col">Pontos</th>
+                    <th scope="col">Gols</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Holanda</td>
+                    <td>7</td>
+                    <td>9</td>
                 </tr>
                 <tr>
-                    <td>5°</td>
-                    <td></td>
-                    <td>40</td>
+                    <th scope="row">2</th>
+                    <td>Japão</td>
+                    <td>6</td>
+                    <td>8</td>
                 </tr>
                 <tr>
-                    <td>6°</td>
-                    <td>r</td>
-                    <td>36</td>
+                    <th scope="row">3</th>
+                    <td>Inglaterra</td>
+                    <td>6</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Canada</td>
+                    <td>1</td>
+                    <td>2</td>
                 </tr>
             </tbody>
         </table>
     </div>
+    <Br></Br>
+    <Br></Br>
+    <h1 class="text-light bg-danger">Grupo C</h1>
+    <table class="table table-dark table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Colocação</th>
+                <th scope="col">País</th>
+                <th scope="col">Pontos</th>
+                <th scope="col">Gols</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Irã</td>
+                <td>9</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Alemanha</td>
+                <td>7</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Servia</td>
+                <td>3</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <th scope="row">4</th>
+                <td>EUA</td>
+                <td>1</td>
+                <td>0</td>
+            </tr>
+        </tbody>
+    </table>
     </div>
 </body>
 
